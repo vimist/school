@@ -1,0 +1,148 @@
+* {
+	box-sizing: border-box;
+	color: #000;
+}
+
+body {
+	font-family: 'Coming Soon';
+}
+
+p {
+	margin: 2ex 0px 2ex 0px;
+}
+
+.columns {
+	display: flex;
+}
+
+.col-1 { width: 8.333333% }
+.col-2 { width: 16.666666% }
+.col-3 { width: 24.999999% }
+.col-4 { width: 33.333332% }
+.col-5 { width: 41.666665% }
+.col-6 { width: 49.999998% }
+.col-7 { width: 58.333331% }
+.col-8 { width: 66.666664% }
+.col-9 { width: 74.999997% }
+.col-10 { width: 83.33333% }
+.col-11 { width: 91.666663% }
+.col-12 { width: 100% }
+
+.container-label {
+	margin-top: calc(1ex + 15px);
+	padding: 1em;
+
+	border: 15px solid #3cae17;
+	border-radius: 0px 4px 4px 4px;
+}
+
+.container-label::before {
+	content: attr(data-label);
+
+	position: absolute;
+	transform: translate(calc(-1em - 15px), calc(-1em - 100%));
+
+	padding-right: 1em;
+	padding-left: 1em;
+
+	border: 10px solid #3cae17;
+	border-radius: 4px 4px 0px 0px;
+
+	color: #fff;
+	font-weight: bold;
+
+	background-color: #3cae17;
+}
+
+.text-centre {
+	text-align: center;
+}
+
+.centre-both {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.size-48 { width: 48px; height: 48px; }
+.size-128 { width: 128px; height: 128px; }
+
+.full-width { width: 100%; }
+.full-height { height: 100%; }
+
+.max-width-100 { max-width: 100%; }
+.max-height-100 { max-height: 100%; }
+
+.p-1 { padding: 0.5em; }
+.py-1 { padding-top: 0.5em; padding-bottom: 0.5em; }
+.px-1 { padding-left: 0.5em; padding-right: 0.5em; }
+
+.m-1 { margin: 0.5em; }
+.my-1 { margin-top: 0.5em; margin-bottom: 0.5em; }
+.mx-1 { margin-left: 0.5em; margin-right: 0.5em; }
+.mx-a { margin-left: auto; margin-right: auto; }
+.mt-0 { margin-top: 0px; }
+.mt-1 { margin-top: 0.5em; }
+.mt-2 { margin-top: 1em; }
+
+.h1 { font-size: 3rem; }
+.h2 { font-size: 2.6rem; }
+.h3 { font-size: 2.2rem; }
+.h4 { font-size: 1.8rem; }
+.h5 { font-size: 1.4rem; }
+
+[draggable=true] { cursor: grab; }
+
+.round {
+	border-radius: 4px;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.correct {
+	background-color: #3cae17;
+}
+
+.incorrect {
+	background-color: #ae1717;
+}
+
+
+table.tensframe {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table.tensframe td {
+	position: relative;
+	border: 2px solid #444;
+}
+
+table.tensframe td::after {
+	content: '';
+	display: block;
+	margin-top: 100%;
+}
+
+table.tensframe td > div {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+
+input.inline-editable{
+	width: 2em;
+
+	border: 1px solid #ccc;
+	border-bottom: 0.1ex solid #333;
+
+	background-color: transparent;
+
+	text-align: center;
+}
+
