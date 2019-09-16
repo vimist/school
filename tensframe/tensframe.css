@@ -138,7 +138,7 @@ table.tensframe td > div {
 input.inline-editable{
 	width: 2em;
 
-	border: 1px solid #ccc;
+	border: 1px solid #00000077;
 	border-bottom: 0.1ex solid #333;
 
 	background-color: transparent;
@@ -146,3 +146,6 @@ input.inline-editable{
 	text-align: center;
 }
 
+input[type=number].inline-editable{
+	width: 3em;
+}
